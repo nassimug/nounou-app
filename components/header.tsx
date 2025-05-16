@@ -276,7 +276,7 @@ export default function Header() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="relative h-10 w-10 rounded-full">
                 <Avatar>
-                  <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Photo de profil" />
+                  <AvatarImage src="/profile.png?height=40&width=40" alt="Photo de profil" />
                   <AvatarFallback className="bg-[#FFDEE9] text-[#6A5ACD]">
                     {userType === "family" ? "FM" : userType === "nounou" ? "ND" : "RA"}
                   </AvatarFallback>
@@ -420,26 +420,6 @@ export default function Header() {
       )
     }
 
-    return (
-      <>
-        <div className="mb-4 flex justify-end"></div>
-
-        <div className="grid grid-cols-2 gap-4">
-          <Link href="/auth/login" onClick={() => setIsMenuOpen(false)}>
-            <Button variant="outline" className="w-full gap-2 rounded-full">
-              <LogIn className="h-4 w-4" />
-              Connexion
-            </Button>
-          </Link>
-          <Link href="/auth/signup" onClick={() => setIsMenuOpen(false)}>
-            <Button className="w-full gap-2 rounded-full bg-[#6A5ACD]">
-              <User className="h-4 w-4" />
-              Inscription
-            </Button>
-          </Link>
-        </div>
-      </>
-    )
   }
 
   return (

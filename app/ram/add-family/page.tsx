@@ -308,7 +308,7 @@ export default function RamAddFamilyPage() {
                   <Button
                     type="button"
                     className="gap-2 rounded-full bg-[#6A5ACD] text-white hover:bg-[#6A5ACD]/80"
-                    onClick={() => document.querySelector('[data-value="children"]')?.click()}
+                    onClick={() => (document.querySelector('[data-value="children"]') as HTMLElement | null)?.click()}
                   >
                     Continuer vers les enfants
                     <svg
@@ -441,7 +441,7 @@ export default function RamAddFamilyPage() {
                     type="button"
                     variant="outline"
                     className="gap-2 rounded-full border-[#FFDEE9] text-[#6A5ACD] hover:bg-[#FFDEE9]/20"
-                    onClick={() => document.querySelector('[data-value="family"]')?.click()}
+                    onClick={() => (document.querySelector('[data-value="family"]') as HTMLElement | null)?.click()}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -462,7 +462,7 @@ export default function RamAddFamilyPage() {
                   <Button
                     type="button"
                     className="gap-2 rounded-full bg-[#6A5ACD] text-white hover:bg-[#6A5ACD]/80"
-                    onClick={() => document.querySelector('[data-value="additional"]')?.click()}
+                    onClick={() => (document.querySelector('[data-value="additional"]') as HTMLElement | null)?.click()}
                   >
                     Continuer vers les informations complémentaires
                     <svg
@@ -578,7 +578,7 @@ export default function RamAddFamilyPage() {
                     type="button"
                     variant="outline"
                     className="gap-2 rounded-full border-[#FFDEE9] text-[#6A5ACD] hover:bg-[#FFDEE9]/20"
-                    onClick={() => document.querySelector('[data-value="children"]')?.click()}
+                    onClick={() => (document.querySelector('[data-value="children"]') as HTMLElement | null)?.click()}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

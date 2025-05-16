@@ -24,14 +24,14 @@ export default function FamilyDashboardPage() {
       id: 1,
       name: "Emma",
       age: "3 ans",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/emma.png?height=100&width=100",
       nounou: "Marie Dupont",
     },
     {
       id: 2,
       name: "Lucas",
       age: "1 an",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/lucas.png?height=100&width=100",
       nounou: "Marie Dupont",
     },
   ]

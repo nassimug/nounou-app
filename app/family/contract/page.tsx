@@ -16,7 +16,20 @@ import { ChevronLeft, ChevronRight, FileText, Save, Calendar, Clock, User } from
 
 export default function FamilyContractPage() {
   const [step, setStep] = useState(1)
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    nounou: string
+    children: string[]
+    startDate: string
+    endDate: string
+    hourlyRate: string
+    hoursPerWeek: string
+    schedule: string
+    meals: boolean
+    mealPrice: string
+    vacationDays: string
+    paymentMethod: string
+    additionalTerms: string
+  }>({
     nounou: "",
     children: [],
     startDate: "",

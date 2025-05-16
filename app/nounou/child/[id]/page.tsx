@@ -38,7 +38,7 @@ export default function ChildDetailPage({ params }: { params: { id: string } }) 
     name: "Emma Martin",
     age: "3 ans",
     birthdate: "15/05/2020",
-    image: "/child-portrait.png",
+    image: "/emma.png",
     family: {
       name: "Famille Martin",
       parents: "Thomas et Sophie Martin",

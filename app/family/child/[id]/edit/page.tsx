@@ -25,7 +25,7 @@ export default function EditChildPage() {
     lastName: "Martin",
     birthdate: childId === "1" ? "2020-05-12" : "2022-11-23",
     gender: childId === "1" ? "female" : "male",
-    image: childId === "1" ? "/child-portrait.png" : "/placeholder-8rop1.png",
+    image: childId === "1" ? "/emma.png" : "/lucas.png",
     allergies: childId === "1" ? ["Arachides", "Fraises"] : [],
     particularites: childId === "1" ? "Doudou nécessaire pour la sieste" : "Tétine pour dormir",
     address: "15 rue des Lilas, 69003 Lyon",

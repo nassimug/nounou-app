@@ -18,7 +18,7 @@ export default function NounouChildrenPage() {
       name: "Emma Martin",
       age: "3 ans",
       birthdate: "15/05/2020",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/emma.png?height=100&width=100",
       family: {
         name: "Famille Martin",
         parents: "Thomas et Sophie Martin",
@@ -37,7 +37,7 @@ export default function NounouChildrenPage() {
       name: "Lucas Martin",
       age: "1 an",
       birthdate: "10/11/2022",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/lucas.png?height=100&width=100",
       family: {
         name: "Famille Martin",
         parents: "Thomas et Sophie Martin",
@@ -56,7 +56,7 @@ export default function NounouChildrenPage() {
       name: "Léa Dubois",
       age: "2 ans",
       birthdate: "22/07/2021",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/lea.png?height=100&width=100",
       family: {
         name: "Famille Dubois",
         parents: "Pierre et Julie Dubois",

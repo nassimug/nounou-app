@@ -31,7 +31,7 @@ export default function ChildDetailsPage() {
     name: childId === "1" ? "Emma" : "Lucas",
     age: childId === "1" ? "3 ans" : "1 an",
     birthdate: childId === "1" ? "12/05/2020" : "23/11/2022",
-    image: childId === "1" ? "/child-portrait.png" : "/placeholder-8rop1.png",
+    image: childId === "1" ? "/emma.png" : "/lucas.png",
     nounou: "Marie Dupont",
     nounouId: "123",
     allergies: childId === "1" ? ["Arachides", "Fraises"] : [],

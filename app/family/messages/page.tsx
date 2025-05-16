@@ -18,7 +18,7 @@ export default function FamilyMessagesPage() {
       id: "marie",
       name: "Marie Dupont",
       role: "Assistante maternelle",
-      avatar: "/placeholder.svg?height=40&width=40",
+      avatar: "/nounou1.png?height=40&width=40",
       lastMessage: "Bonjour, comment va Emma aujourd'hui ?",
       lastMessageTime: "10:30",
       unread: true,
@@ -28,7 +28,7 @@ export default function FamilyMessagesPage() {
       id: "sophie",
       name: "Sophie Moreau",
       role: "Assistante maternelle",
-      avatar: "/placeholder.svg?height=40&width=40",
+      avatar: "/nounou2.png?height=40&width=40",
       lastMessage: "Merci pour les informations !",
       lastMessageTime: "Hier",
       unread: false,
@@ -76,13 +76,7 @@ export default function FamilyMessagesPage() {
         time: "10:40",
         status: "read",
       },
-      {
-        id: 5,
-        sender: "marie",
-        text: "Parfait, je veillerai à ce qu'elle garde son doudou avec elle. À quelle heure viendrez-vous la chercher aujourd'hui ?",
-        time: "10:42",
-        status: "unread",
-      },
+     
     ],
     sophie: [
       {
