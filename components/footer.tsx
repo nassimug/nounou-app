@@ -89,17 +89,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/help/contact" className="text-gray-600 hover:text-[#6A5ACD]">
+                <Link href="/contact" className="text-gray-600 hover:text-[#6A5ACD]">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/help/legal" className="text-gray-600 hover:text-[#6A5ACD]">
+                <Link href="/" className="text-gray-600 hover:text-[#6A5ACD]">
                   Mentions légales
                 </Link>
               </li>
               <li>
-                <Link href="/help/privacy" className="text-gray-600 hover:text-[#6A5ACD]">
+                <Link href="/" className="text-gray-600 hover:text-[#6A5ACD]">
                   Politique de confidentialité
                 </Link>
               </li>

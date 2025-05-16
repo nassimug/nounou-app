@@ -59,7 +59,7 @@ export default function RamProfilePage() {
       <div className="mb-6 flex flex-col items-center justify-center md:flex-row md:justify-between">
         <div className="mb-4 flex flex-col items-center md:mb-0 md:flex-row md:items-center">
           <div className="relative mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-[#D1F2EB] md:mb-0 md:mr-4">
-            <img src="/professional-woman-portrait.png" alt="Photo de profil" className="h-full w-full object-cover" />
+            <img src="/placeholder.svg" alt="Photo de profil" className="h-full w-full object-cover" />
             <button className="absolute bottom-0 right-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#6A5ACD] text-white">
               <Upload className="h-4 w-4" />
             </button>

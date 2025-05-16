@@ -29,7 +29,7 @@ export default function FamilySearchPage() {
       availability: "Temps plein",
       startDate: "Immédiate",
       hourlyRate: "5.50€ net/h",
-      image: "/professional-woman-portrait.png",
+      image: "/nounou1.png",
       skills: ["Premiers secours", "Activités créatives", "Sorties éducatives"],
       languages: ["Français", "Anglais"],
       isFavorite: false,
@@ -46,7 +46,7 @@ export default function FamilySearchPage() {
       availability: "Temps partiel",
       startDate: "Septembre 2023",
       hourlyRate: "5.75€ net/h",
-      image: "/woman-portrait.png",
+      image: "/nounou2.png",
       skills: ["Éveil musical", "Cuisine", "Activités motrices"],
       languages: ["Français", "Espagnol"],
       isFavorite: true,
@@ -63,7 +63,7 @@ export default function FamilySearchPage() {
       availability: "Temps plein",
       startDate: "Octobre 2023",
       hourlyRate: "6.00€ net/h",
-      image: "/woman-portrait.png",
+      image: "/nounou3.png",
       skills: ["Aide aux devoirs", "Activités sportives", "Lecture"],
       languages: ["Français"],
       isFavorite: false,
@@ -80,7 +80,7 @@ export default function FamilySearchPage() {
       availability: "Temps plein",
       startDate: "Immédiate",
       hourlyRate: "6.25€ net/h",
-      image: "/woman-portrait.png",
+      image: "/nounou4.png",
       skills: ["Premiers secours", "Activités manuelles", "Jeux éducatifs"],
       languages: ["Français", "Italien"],
       isFavorite: false,
@@ -97,7 +97,7 @@ export default function FamilySearchPage() {
       availability: "Temps partiel",
       startDate: "Novembre 2023",
       hourlyRate: "5.25€ net/h",
-      image: "/woman-portrait.png",
+      image: "/nounou5.png",
       skills: ["Éveil musical", "Arts plastiques", "Jeux de plein air"],
       languages: ["Français"],
       isFavorite: false,
@@ -114,14 +114,27 @@ export default function FamilySearchPage() {
       availability: "Temps plein",
       startDate: "Janvier 2024",
       hourlyRate: "5.90€ net/h",
-      image: "/woman-portrait.png",
+      image: "/nounou6.png",
       skills: ["Premiers secours", "Cuisine", "Lecture"],
       languages: ["Français", "Allemand"],
       isFavorite: false,
     },
   ])
 
-  const [searchFilters, setSearchFilters] = useState({
+  type SearchFilters = {
+    location: string
+    distance: number[]
+    availability: string
+    experience: string
+    languages: string[]
+    skills: string[]
+    minRating: number
+    maxRate: number
+    immediateStart: boolean
+    withReviews: boolean
+  }
+
+  const [searchFilters, setSearchFilters] = useState<SearchFilters>({
     location: "",
     distance: [5],
     availability: "all",
@@ -639,7 +652,7 @@ export default function FamilySearchPage() {
             {searchResults.map((nounou) => (
               <Card key={nounou.id} className="overflow-hidden transition-all hover:shadow-md">
                 <CardContent className="p-0">
-                  <div className="flex flex-col md:flex-row">
+                  <div className="flex flex-col md:flex-row min-h-[250px]">
                     <div className="relative md:w-1/4">
                       <div className="absolute right-2 top-2 z-10">
                         <Button
@@ -658,7 +671,7 @@ export default function FamilySearchPage() {
                           </span>
                         </Button>
                       </div>
-                      <div className="aspect-square w-full overflow-hidden md:aspect-auto md:h-full">
+                      <div className="h-[250px] w-full overflow-hidden">
                         <Image
                           src={nounou.image || "/placeholder.svg"}
                           alt={nounou.name}

@@ -86,7 +86,7 @@ export default function ServicesPage() {
                   </Link>
                 </div>
                 <div className="flex justify-center">
-                  <Image src="/enfant.png" alt="Children playing" width={300} height={200} className="rounded-lg" />
+                  <Image src="/famille.png" alt="Children playing" width={300} height={200} className="rounded-lg" />
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="flex justify-center">
                   <Image
-                    src="/professional-woman-portrait.png"
+                    src="/nounou.png"
                     alt="Professional woman"
                     width={300}
                     height={300}
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="flex justify-center">
                   <Image
-                    src="/woman-portrait.png"
+                    src="/ramrap.png"
                     alt="RAM professional"
                     width={300}
                     height={300}
@@ -267,7 +267,7 @@ export default function ServicesPage() {
               <Button className="bg-white text-[#6A5ACD] hover:bg-white/90">Inscription nounou</Button>
             </Link>
             <Link href="/contact">
-              <Button variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button className="bg-white text-[#6A5ACD] hover:bg-white/90">
                 Contacter l'équipe
               </Button>
             </Link>
@@ -278,7 +278,13 @@ export default function ServicesPage() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+type ServiceCardProps = {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
     <Card className="flex h-full flex-col">
       <CardHeader>
@@ -292,7 +298,7 @@ function ServiceCard({ icon, title, description }) {
   )
 }
 
-function FeatureItem({ text }) {
+function FeatureItem({ text }: { text: string }) {
   return (
     <li className="flex items-start">
       <CheckCircle className="mr-2 h-5 w-5 shrink-0 text-[#6A5ACD]" />

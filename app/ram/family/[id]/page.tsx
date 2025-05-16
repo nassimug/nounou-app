@@ -341,7 +341,7 @@ export default function RamFamilyDetailPage({ params }: { params: { id: string }
                     <div className="flex h-48 w-full items-center justify-center bg-[#FFDEE9]/20 p-4 md:h-auto md:w-48">
                       <div className="relative h-32 w-32 overflow-hidden rounded-full">
                         <img
-                          src={child.image || "/placeholder.svg"}
+                          src={"/emma.png"}
                           alt={child.name}
                           className="h-full w-full object-cover"
                         />

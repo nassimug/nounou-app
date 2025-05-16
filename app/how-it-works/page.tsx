@@ -233,12 +233,19 @@ export default function HowItWorksPage() {
   )
 }
 
-function StepCard({ number, title, description, icon }) {
+type StepCardProps = {
+  number: number
+  title: string
+  description: string
+  icon: React.ReactNode
+}
+
+function StepCard({ number, title, description, icon }: StepCardProps) {
   return (
     <Card className="flex flex-col items-center text-center">
       <CardHeader>
         <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FFDEE9]/30">{icon}</div>
-        <div className="absolute -mt-2 -ml-2 flex h-6 w-6 items-center justify-center rounded-full bg-[#6A5ACD] text-xs font-bold text-white">
+        <div className="absolute -mt-2 -mt-2 flex h-6 w-6 items-center justify-center rounded-full bg-[#6A5ACD] text-xs font-bold text-white">
           {number}
         </div>
         <CardTitle className="text-xl">{title}</CardTitle>
@@ -250,7 +257,12 @@ function StepCard({ number, title, description, icon }) {
   )
 }
 
-function FeatureCard({ title, description }) {
+type FeatureCardProps = {
+  title: string
+  description: string
+}
+
+function FeatureCard({ title, description }: FeatureCardProps) {
   return (
     <Card>
       <CardHeader>

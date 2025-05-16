@@ -63,7 +63,7 @@ export default function NounouProfilePage() {
         <div className="mb-4 flex flex-col items-center md:mb-0 md:flex-row md:items-center">
           <div className="relative mb-4 h-24 w-24 overflow-hidden rounded-full border-4 border-[#C7E9FB] md:mb-0 md:mr-4">
             <img
-              src="/placeholder.svg?height=200&width=200"
+              src="/nounou1.png?height=200&width=200"
               alt="Photo de profil"
               className="h-full w-full object-cover"
             />

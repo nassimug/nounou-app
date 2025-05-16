@@ -302,7 +302,32 @@ export default function PricingPage() {
   )
 }
 
-function PricingCard({ title, price, period = "", description, features, buttonText, buttonLink, popular }) {
+type Feature = {
+  included: boolean
+  text: string
+}
+
+type PricingCardProps = {
+  title: string
+  price: string
+  period?: string
+  description: string
+  features: Feature[]
+  buttonText: string
+  buttonLink: string
+  popular: boolean
+}
+
+function PricingCard({
+  title,
+  price,
+  period = "",
+  description,
+  features,
+  buttonText,
+  buttonLink,
+  popular,
+}: PricingCardProps) {
   return (
     <Card className={`flex flex-col ${popular ? "border-[#6A5ACD] ring-2 ring-[#6A5ACD] ring-opacity-50" : ""}`}>
       {popular && (
@@ -324,7 +349,7 @@ function PricingCard({ title, price, period = "", description, features, buttonT
 
       <CardContent className="flex-grow">
         <ul className="space-y-3">
-          {features.map((feature, index) => (
+          {features.map((feature: Feature, index: number) => (
             <li key={index} className="flex items-start">
               {feature.included ? (
                 <CheckCircle className="mr-2 h-5 w-5 shrink-0 text-green-500" />

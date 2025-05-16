@@ -12,7 +12,7 @@ export default function FamilyChildrenPage() {
       name: "Emma",
       age: "3 ans",
       birthdate: "12/05/2020",
-      image: "/child-portrait.png",
+      image: "/emma.png",
       nounou: "Marie Dupont",
     },
     {
@@ -20,7 +20,7 @@ export default function FamilyChildrenPage() {
       name: "Lucas",
       age: "1 an",
       birthdate: "23/11/2022",
-      image: "/placeholder-8rop1.png",
+      image: "/lucas.png",
       nounou: "Marie Dupont",
     },
   ]

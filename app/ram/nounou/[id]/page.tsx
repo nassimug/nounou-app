@@ -32,7 +32,7 @@ export default function RamNounouProfilePage({ params }: { params: { id: string 
     languages: ["Français", "Anglais"],
     availability: true,
     availableSpots: 2,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/nounou1.png?height=300&width=300",
     specialties: ["Éveil musical", "Activités manuelles", "Sorties ludiques"],
     about:
       "Assistante maternelle agréée depuis 10 ans, je propose un accueil chaleureux et bienveillant pour vos enfants. Diplômée du CAP Petite Enfance, je suis passionnée par l'éveil des tout-petits et la mise en place d'activités ludiques et éducatives adaptées à chaque âge.",
@@ -376,7 +376,7 @@ export default function RamNounouProfilePage({ params }: { params: { id: string 
                         <div className="flex items-center gap-4">
                           <div className="relative h-12 w-12 overflow-hidden rounded-full">
                             <img
-                              src="/placeholder.svg?height=100&width=100"
+                              src="/emma.png?height=100&width=100"
                               alt={child.name}
                               className="h-full w-full object-cover"
                             />
